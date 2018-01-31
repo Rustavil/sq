@@ -28,6 +28,9 @@ var app = new Vue({
             this.items = this.items.concat(paging.items);
             this.hasMore = paging.hasMore;
         }, response => {})
+        },
+        dateFormat: function (dateNanosec){
+            return moment(dateNanosec).format("DD MMM YYYY hh:mm a");
         }
     }
 })

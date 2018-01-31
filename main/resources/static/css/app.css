@@ -80,6 +80,7 @@ body{
     padding: 0.5em;
     background-color: #C3C1BC66;
     padding-left: 58px;
+    opacity:0.8;
 }
 
 .search-result a {
@@ -179,4 +180,8 @@ body{
           -webkit-transform: scale(1.0);
           transform: scale(1.0);
       }
+}
+.field-name{
+    color: #c3c1bc;
+    font-size: 12px;
 }
