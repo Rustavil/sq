@@ -1,0 +1,15 @@
+server:
+  port: 8080
+stack:
+  exchange:
+    application:
+#      Search site
+      site: stackoverflow
+#      Stack Exchange API application key
+      key: ODDrA06wMm1VluDmXe1AyQ((
+
+logging:
+  level:
+    ru.rustavil.sq: DEBUG
+    org.springframework.web: INFO
+    org.hibernate: INFO
