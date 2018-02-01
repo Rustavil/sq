@@ -1,6 +1,9 @@
 # SQ
 SQ(search questions) for Stack Exchange
 
+## Interactive Demo
+Checkout the Interactive Demo [here](https://sq-heroku.herokuapp.com/).
+
 ## Configuration
 Search engine settings are SearchConfiguration
 Properties:

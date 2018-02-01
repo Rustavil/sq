@@ -78,8 +78,6 @@
             <groupId>com.googlecode.stackexchange</groupId>
             <artifactId>stackoverflow-java-sdk-release</artifactId>
             <version>${stackoverflow.sdk.version}</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/libs/stackoverflow-java-sdk-release.jar</systemPath>
         </dependency>
 
         <!-- lombok -->
@@ -91,23 +89,4 @@
         </dependency>
 
     </dependencies>
-    <repositories>
-        <repository>
-            <id>oss.sonatype</id>
-            <url>https://oss.sonatype.org/content/repositories/releases/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-    </repositories>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
