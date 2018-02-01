@@ -32,7 +32,7 @@ public class SearchEndpoint {
     public DeferredResult<ResponseEntity> search(@RequestParam(name = "value") String query,
                                                             @RequestParam int page,
                                                             @RequestParam int size){
-        log.debug("Search query:{} page:{} size:{}", query);
+        log.debug("Search query:{} page:{} size:{}", query, page, size);
         DeferredResult<ResponseEntity> result = new DeferredResult<>();
         searchService.search(query, page, size)
                 .thenAccept((paging)->result.setResult(ResponseEntity.ok(PagingDtoMapper.INSTANCE.toDto(paging))));
