@@ -16,7 +16,6 @@ Properties:
     size - number of items per page
 ```
 
-
 ## Notes
 When building a project, you need to build the stackoverflow-java-sdk dependency
 

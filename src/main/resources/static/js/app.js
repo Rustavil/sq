@@ -5,17 +5,23 @@ var app = new Vue({
         page: 1,
         size: 5,
         items: [],
-        hasMore: false
+        hasMore: false,
+        loading: false
     },
     methods: {
         search: function () {
+            this.loading = true;
+            this.items = [];
             if (this.query) {
                 this.page = 1;
                 this.$http.get('/query', {params: {value: this.query, page: this.page, size: this.size}}).then(response => {
                     paging = response.body;
                 this.items = paging.items
                 this.hasMore = paging.hasMore;
-            }, response => {});
+                this.loading = false;
+            }, response => {
+                    this.loading = false;
+                });
             }
         },
         more: function () {
