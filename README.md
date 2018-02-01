@@ -1,14 +1,23 @@
 # SQ
 SQ(search questions) for Stack Exchange
 
-##Configuration
+## Configuration
 Search engine settings are SearchConfiguration
 Properties:
 * **stack.exchange.application.site** - Search site
 * **stack.exchange.application.key** - Stack Exchange API application key
 
+## REST Endpoints
+ SearchEndpoint - endpoint for searching questions
+```
+    GET: /query?value={search_string}&page={page}&size{size}
+    search_string - search string from the question
+    page - page number
+    size - number of items per page
+```
 
-##Notes
+
+## Notes
 When building a project, you need to build the stackoverflow-java-sdk dependency
 
 ```
